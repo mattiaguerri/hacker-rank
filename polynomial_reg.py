@@ -9,7 +9,7 @@ from sklearn.preprocessing import PolynomialFeatures
 # for line in sys.stdin:
 #     lines.append(line)
 
-with open("./dataset/input.txt") as f:
+with open("./input.txt") as f:
     lines = f.readlines()
 
 split = lines[0].split()
