@@ -1,5 +1,6 @@
 #!/bin/python3
 
+import sys
 from itertools import groupby
 import math
 import os
@@ -39,6 +40,16 @@ def substrCount(n, s):
     case_a = 0
     case_b = 0
     for x,y in groupby(s):
+        print(s)
+        print(x)
+        print(y)
+        for i in y:
+            print(i)
+        sys.exit()
+
+
+
+
         case_a += k_sum(sum(1 for i in y))
     for i in range(1,len(s)-1):
         skip = 1
@@ -57,7 +68,7 @@ if __name__ == '__main__':
 
     n = 7
 
-    s = "abcbaba"
+    s = "aaaaaabcbaba"
 
     result = substrCount(n, s)
 
